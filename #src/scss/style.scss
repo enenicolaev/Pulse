@@ -1,0 +1,65 @@
+@import "null_style";
+@import "mixins";
+@import "fonts";
+@import "newanimate";
+@import "iconsfont.scss";
+@import "blocks/header.scss";
+@import "blocks/promo.scss";
+@import "blocks/advant.scss";
+@import "blocks/consult.scss";
+@import "blocks/goods.scss";
+@import "blocks/catalog.scss";
+@import "blocks/reviews.scss";
+@import "blocks/footer.scss";
+@import "blocks/overlay.scss";
+
+
+
+
+
+
+@import "medias.scss";
+
+
+
+
+
+body {
+   font-family: Museo, sans-serif;
+}
+
+.container {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 0 25px;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+
+.pageup {
+   display: none;
+   background-color: $mainColor;
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   position: fixed;
+   bottom: 30px;
+   right: 30px;
+   z-index: 10;
+
+   img {
+      display: block;
+      width: 100%;
+      height: calc(100% - 5px);
+      transform: rotate(180deg);
+   }
+}
+
+
+
+
+

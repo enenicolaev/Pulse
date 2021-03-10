@@ -1,0 +1,53 @@
+.overlay {
+   display: none;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: rgba($color: #000000, $alpha: .56);
+   z-index: 100;
+
+}
+.modal {
+   display: none;
+   padding: 40px;
+   width: 380px;
+   min-height: 400px;
+   background-color: #f2f2f2;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+      .consult__form {
+         label.error {
+            color: black;
+         }
+      }
+
+		&__title {
+         color: #0d0d0d;
+         font-size: 19px;
+         font-weight: 700;
+         text-align: center;
+		}
+
+		&__descr {
+         margin-top: 10px;
+         color: #0d0d0d;
+         font-weight: 500;
+         text-align: center;
+      }
+      
+      &_mini {
+         min-height: 140px;
+      }
+
+      &__close {
+         position: absolute;
+         top: 0;
+         right: -40px;
+         color: $mainColor;
+         font-size: 21px;
+         cursor: pointer;
+      }
+}

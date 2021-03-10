@@ -1,0 +1,50 @@
+
+.goods {
+   padding: 108px 0 54px;
+
+   .swiper-container {
+      position: relative;
+      max-width: 946px;
+   }
+   .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+         max-width: 100%;
+         display: block;
+      }
+   }
+
+   &-swiper__next {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translateY(-50%);
+      z-index: 90000;
+      width: 30px;
+      height: 50px;
+      background: url("../img/icons/arrow__right_red.png") center/cover no-repeat;
+   }
+   &-swiper__prev {
+      position: absolute;
+      top: 50%;
+      left: 0px;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 50px;
+      background: url("../img/icons/arrow__left_red.png") center/cover no-repeat;
+   }
+   .swiper-pagination {
+      display: none;
+      span {
+         background-color: $mainColor;
+      }
+   }
+}
+
+
+
+
+
+

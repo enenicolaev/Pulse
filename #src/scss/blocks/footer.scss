@@ -1,0 +1,118 @@
+.footer {
+   min-height: 630px;
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+
+   &__map {
+   }
+
+   &__info {
+      background-color: $mainColor;
+      width: 460px;
+      height: 270px;
+      padding: 50px 65px 60px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: 1s all;
+      border-bottom-right-radius: 120px;
+      border-bottom-left-radius: 120px;
+
+      &_disable {
+         transition: 1s all;
+         top: -270px;
+      }
+   }
+
+   &__addr {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+      font-style: normal;
+      &:hover {
+         color: white;
+      }
+   }
+
+   &__phone {
+      display: block;
+      margin-top: 35px;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+
+   &__social {
+      max-width: 210px;
+      margin: 38px auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__social-item {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 26px;
+      color: white;
+      &:hover {
+         color: rgb(0, 0, 0);
+         border: 2px solid black;
+         transition: 0.5s all;
+      }
+   }
+
+   .icon-instagram {
+      line-height: 47px;
+   }
+
+   &__btn {
+      @include button(80px, 40px, 16px);
+      background-color: white;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      transition: 0.7s all;
+      color: black;
+      font-weight: 700;
+      overflow: hidden;
+      opacity: 0.75;
+      &:hover {
+         box-shadow: none;
+      }
+
+      &_active {
+         bottom: -40px;
+         transition: 0.7s all;
+         border: 2px solid grey;
+      }
+   }
+   &__img {
+      display: block;
+      transform: rotate(90deg);
+      width: 20px;
+      height: 50px;
+      margin-top: -4px;
+      transition: 0.5s all;
+
+      &_active {
+         transform: rotate(270deg);
+         transition: 0.5s all;
+      }
+   }
+}
+

@@ -1,0 +1,54 @@
+.reviews {
+   padding: 54px 0 75px;
+
+   &__title {
+      color: #0d0d0d;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+   }
+
+   &__comments {
+      margin-top: 70px;
+   }
+}
+
+.comment {
+   display: flex;
+   margin-top: 100px;
+
+   &:first-child {
+      margin-top: 0px;
+   }
+
+   &__img {
+      display: block;
+      margin-right: 60px;
+   }
+
+   &__info {
+   }
+
+   &__name {
+      color: #0d0d0d;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: left;
+   }
+
+   &__sport {
+      color: #646464;
+      font-weight: 300;
+      text-align: left;
+      margin-top: 10px;
+   }
+
+   &__text {
+      color: #0d0d0d;
+      font-size: 16px;
+      font-weight: 300;
+      text-align: left;
+      margin-top: 20px;
+   }
+}

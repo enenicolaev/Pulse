@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <title>Pulse</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+   <div class="wrapper">
+
+      <section class="promo">
+         <div class="container">
+            @@include("html/_header.html")
+            @@include("html/_promo.html")
+         </div>
+      </section>
+
+      <section class="advant">
+         <div class="container">
+            @@include("html/_advant.html")
+         </div>
+      </section>
+
+      <section class="consult">
+         <div class="container">
+            @@include("html/_consult.html")
+         </div>
+      </section>
+
+      <section class="goods">
+         <div class="container">
+            @@include("html/_goods.html")
+         </div>
+      </section>
+
+      <section id="catalog" class="catalog">
+         <div class="container">
+            @@include("html/_catalog.html")
+         </div>
+      </section>
+
+      <section class="reviews">
+         <div class="container">
+            @@include("html/_reviews.html")
+         </div>
+      </section>
+
+      <footer class="footer">
+         @@include("html/_footer.html")
+      </footer>
+
+      @@include("html/_overlay.html")
+      
+
+      <a href="#top" class="pageup">
+         <img src="img/icons/up.svg" alt="up">
+      </a>
+
+   </div>
+
+   
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+.consult {
+min-height: auto;
+background: url("../img/sneaker_bg.png") center/cover no-repeat;
+padding: 100px 0 92px;
+   &__title {
+      color: #ffffff;
+      font-size: 36px;
+      text-align: left;
+      text-transform: uppercase;
+
+   }
+
+   &__form-title {
+      color: #ffffff;
+      font-size: 20px;
+      text-align: left;
+      margin-top: 80px;
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      margin-top: 36px;
+
+      input {
+         height: 50px;
+         border-radius: 5px;
+         background-color: #ffffff;
+         border: none;
+         padding: 0 20px;
+         font-weight: 300;
+         margin-bottom: 15px;
+         transition: 0.6s all;
+         &:focus {
+            box-shadow: 2px 2px 5px white;
+         }
+      }
+
+      .error {
+         border: 1px solid red;
+      }
+
+      label.error {
+         text-align: center;
+         color: white;
+         padding-bottom: 15px;
+         letter-spacing: 1.5px;
+         border: none;
+      }
+   }
+
+   &__btn {
+      margin-top: 20px;
+      @include button(300px, 55px, 16px);
+   }
+}

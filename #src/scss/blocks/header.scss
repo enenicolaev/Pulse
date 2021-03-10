@@ -1,0 +1,50 @@
+.header {
+width: 100%;
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
+align-items: center;
+   &__logo {
+      display: block;
+      max-width: 250px;
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+
+   &__official {
+      display: flex;
+      flex-direction: column;
+      font-size: 12px;
+      font-weight: 400;
+      text-align: center;
+      color: #ffffff;
+      &_sub {
+         margin-top: 12px;
+         display: block;
+         color: #ffffff;
+         font-size: 18px;
+         font-weight: 400;
+         text-align: center;
+      }
+   }
+
+   &__phone {
+      display: flex;
+      flex-direction: column;
+      align-items: right;
+   }
+
+   &__number {
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+      color: #ffffff;
+   }
+
+   &__button {
+      margin: 8px auto 0;
+      @include button(150px, 30px, 12px);
+   }
+}
